@@ -1,0 +1,1763 @@
+ol {
+  display: none;
+}
+
+li {
+  font-size: 17px;
+  line-height: 23px;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#breadcrumb_wrapper {
+  position: revert;
+  width: 100%;
+  margin: 0 auto;
+  display: none;
+}
+
+.banner-vender {
+  background-image: url(../img/banner-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 9em;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+h1.titulo {
+  font-family: argentcf-bold;
+  font-size: 6rem;
+  font-style: italic;
+  font-weight: 500;
+  color: #680434;
+}
+
+p.parrafo {
+  width: 50%;
+  margin: 0 auto;
+  font-family: Poppins-Light !important;
+  color: #680334;
+  font-size: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+.conoce-mas {
+  margin-top: 12em;
+  font-size: 18px;
+  font-weight: bold;
+  color: #680334;
+}
+
+
+.banner-hamo {
+  background: #6b0434 url(../img/fondo2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 3em;
+  text-align: center;
+  /* Centra el texto dentro */
+  position: relative;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+
+   .creator-register-container .form-group .custom-logo-upload{
+    width: auto;
+    height: 283px;
+  }
+
+  .register-form-footer {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+  }
+
+  .register-stepper .step-icon {
+    margin: .8rem 0 .3rem 0;
+    display: block;
+    width: 27%;
+  }
+
+  .register-stepper {
+    position: relative;
+    display: flex !important;
+    margin-bottom: 0rem !important;
+    padding: 0em !important;
+    flex-direction: row-reverse !important;
+
+
+  }
+
+  .register-stepper.mb-4 {
+    display: grid;
+    direction: rtl;
+  }
+
+  p.titulo-tienda {
+    color: #680434;
+    font-size: 35px !important;
+    padding-top: 1em;
+    padding-bottom: 10px;
+    line-height: 41px !important;
+  }
+
+  .seller-cta-form.bg-formulario {
+    background: #E0D8CB;
+    width: 100% !important;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding-bottom: 2em;
+  }
+
+  .banner-vender {
+    padding-top: 5em;
+    padding-bottom: 5em;
+    background-position: top;
+  }
+
+  .conoce-mas {
+    font-size: 1.2em;
+    margin-top: 1.5em;
+  }
+
+  /* Ajustes responsivos para la barra de progreso */
+  .register-stepper-track {
+    height: 8px;
+    margin: 0 5px;
+  }
+
+  .register-stepper-progress {
+    height: 100%;
+    border-radius: 4px;
+    /* Quitar transiciones para evitar animaciones extrañas en responsive */
+    transition: none !important;
+  }
+
+  /* Desactivar animación de brillo en móviles para mejor rendimiento */
+  .register-stepper-progress::after {
+    display: none;
+  }
+
+  /* ===== MOBILE STEPPER SIMPLIFICADO ===== */
+  
+  /* Ocultar elementos del stepper en móvil */
+  .register-stepper .step {
+    display: none !important;
+  }
+  
+  .register-stepper-track {
+    display: none !important;
+  }
+  
+  /* Crear barra de progreso simplificada para móvil */
+  .register-stepper {
+    position: relative;
+    height: 8px;
+    background: #fff;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 0 !important;
+    overflow: hidden;
+  }
+  
+  /* Barra de progreso móvil que ocupa todo el ancho */
+  .mobile-progress-bar {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    height: 100% !important;
+    background: linear-gradient(90deg, #CC096F 0%, #A8094C 100%) !important;
+    border-radius: 10px;
+    width: 0%;
+    z-index: 10 !important;
+    display: block !important;
+    visibility: visible !important;
+    /* Sin transiciones para evitar animaciones extrañas en responsive */
+  }
+  
+  /* Texto de paso actual */
+  .mobile-step-text {
+    display: block !important;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    color: #680434;
+    margin-bottom: 10px;
+    font-family: 'Poppins-Regular', sans-serif;
+  }
+  
+  /* Ocultar elementos de desktop en mobile */
+  .register-stepper-track {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+  
+  .register-stepper-progress {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+  
+  .step.completed .step-icon,
+  .step.completed .step-label {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+}
+
+/* Reglas para desktop - ocultar elementos móviles */
+@media (min-width: 769px) {
+  .mobile-step-text {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+
+  .mobile-progress-bar {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+  }
+  
+  .mobile-step-indicator {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+}
+
+h1.titulo-2 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #DED8CC;
+  line-height: 67px;
+  text-align: center;
+}
+
+span.tipo-1 {
+  font-style: italic;
+  font-family: argentcf-bold;
+  font-weight: 600;
+}
+
+p.parrafo-one {
+  color: #CFBDB9;
+  font-size: 20px;
+  padding-top: 15px;
+  font-weight: 500 !important;
+  font-family: 'Poppins-Regular' !important;
+}
+
+img.capa {
+  padding-top: 10px;
+}
+
+.bg-c {
+  background: #4F032A;
+  padding: 60px 20px 60px 20px;
+  border-radius: 30px;
+  margin-bottom: 2em;
+  height: 300px;
+}
+
+p.numb {
+  color: #cc0b6f;
+  text-align: left;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Poppins-Regular' !important;
+}
+
+p.sub-titulo {
+  color: #E1DACB;
+  font-size: 20px;
+  font-weight: 900 !important;
+  font-family: 'Poppins-Regular' !important;
+  text-align: left;
+  line-height: 25px;
+}
+
+p.parra-c {
+  color: #CFBDB9;
+  font-size: 16px;
+  font-weight: 100 !important;
+  font-family: 'Poppins-Regular';
+  text-align: left;
+  line-height: 20px;
+  padding-top: 12px;
+}
+.por-mes{
+  font-family: 'Poppins-Regular';
+}
+p.poppins-font {
+  font-family: 'Poppins-Regular' !important;
+}
+
+.espacio-caja {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 2em;
+}
+
+
+.col-lg-12.col-md-10.mx-auto.bg-vendedor {
+  background-image: url(../img/banner-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 8em;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding-bottom: 8em;
+}
+
+.seller-cta-form.bg-formulario {
+  background: #E0D8CB;
+  width: 45%;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding-bottom: 2em;
+}
+
+p.titulo-tienda {
+  color: #680434;
+  font-size: 55px;
+  padding-top: 1em;
+  padding-bottom: 10px;
+  line-height: 56px;
+}
+
+p.parrafo-tienda {
+  color: #680434;
+  font-size: 20px;
+  line-height: 20px;
+  padding-bottom: 20px;
+}
+
+span.italic {
+  font-style: italic;
+  font-weight: 100;
+  font-family: argentcf-bold;
+  font-size: 60px;
+}
+
+a.btn.btn-lg.px-5.btn-vender {
+  color: #fff !important;
+  border-radius: 50px;
+  font-size: 18px;
+}
+
+a.btn.px-5.btn-vender {
+  border-radius: 50px;
+}
+
+
+.suscripcion-estandar {
+  /* lo que ya tenías */
+  font-family: 'Arial', sans-serif;
+  background: #f2e8d8;
+  padding: 2em;
+
+  /* NUEVO → distribución en columna y centrado */
+  display: flex;
+  flex-direction: column;
+  /* apila la tarjeta + los 2 <p> */
+  align-items: center;
+  /* centra horizontalmente todo */
+  text-align: center;
+  /* centra el texto de los <p> */
+}
+
+/* separa un poco la tarjeta de los textos extra */
+.card-suscripcion {
+  margin-bottom: 1.5rem;
+}
+
+/* estilos opcionales para los párrafos de mensaje */
+.mensaje-extra {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+  color: #4a2d2d;
+}
+
+.card-suscripcion {
+  background: #D7CCB8;
+  border-radius: 20px;
+  max-width: 500px;
+  width: 100%;
+  padding: 2em;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.card-suscripcion h2 {
+  color: #670433;
+  font-size: 1.6rem;
+  margin-bottom: 0.3em;
+}
+.card-suscripcion-poppins {
+  font-family: 'Poppins-Regular';
+}
+
+.limitado {
+  background: #CC096F;
+  color: #E1DACB;
+  padding: 5px 0em 5px 0.5em;
+  clip-path: polygon(7% 10%, 100% 10%, 95% 100%, 0% 100%);
+  overflow: hidden;
+  position: relative;
+  font-size: 16px;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.precio {
+  margin: 1em 0;
+}
+
+.precio-original {
+  text-decoration: line-through;
+  color: #670434;
+  font-size: 24px;
+  margin-right: 0.5em;
+  top: -2em;
+  position: relative;
+}
+
+.precio-descuento {
+  color: #670433;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.por-mes {
+  display: block;
+  margin-top: 0.2em;
+  color: #670433;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.btn-suscribir {
+  background-color: #CC096F;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 0.8em 2em;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 1.5em 0;
+  font-family: 'Poppins-Regular';
+}
+
+.beneficios {
+  list-style: none;
+  padding: 0;
+  color: #670433;
+  font-size: 0.95rem;
+  text-align: left;
+}
+.beneficios-poppins {
+  font-family: 'Poppins-Regular' !important;
+}
+
+.beneficios li {
+  margin-bottom: 0.6em;
+}
+
+.badge-descuento {
+  position: absolute;
+  top: 3.5em;
+  right: -6em;
+  background: url(../img/oferta.png);
+  color: #670433;
+  font-weight: bold;
+  text-align: center;
+  padding: 2em 0.7em;
+  width: 190px;
+  height: 190px;
+  background-repeat: no-repeat;
+  transform: rotate(12deg);
+  font-family: 'Poppins-Regular';
+  font-size: 0.9rem;
+}
+
+b.fst-italic {
+  font-style: italic;
+}
+
+span.precio {
+  font-size: 45px;
+}
+
+/* Responsive */
+@media (max-width: 548px) {
+
+  #left-column {
+    width: 100%;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin: 0;
+    margin-top: 0px;
+  }
+
+  .btn-primary {
+    background-color: #C50A59;
+    color: #fff !important;
+    width: 65%;
+  }
+
+  p.parrafo {
+    width: 90% !important;
+    margin: 0 auto;
+    font-family: Poppins-Light !important;
+    color: #680334;
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  h1.titulo {
+    font-family: argentcf-bold;
+    font-size: 3.5rem !important;
+    font-style: italic;
+    font-weight: 500;
+    color: #680434;
+  }
+
+  h1.necesitas {
+    font-family: argentcf-bold;
+    font-size: 3.5rem !important;
+    font-style: italic;
+    font-weight: 500;
+    color: #E1DACB;
+  }
+
+  .btn-suscribir {
+    background-color: #CC096F;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 0.8em 1em 16px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 1.5em 0;
+    font-family: 'Poppins-Regular';
+  }
+
+  .limitado {
+    background: #CC096F;
+    color: #E1DACB;
+    padding: 5px 0em 5px 0.5em;
+    clip-path: polygon(7% 10%, 100% 10%, 95% 100%, 0% 100%);
+    overflow: hidden;
+    position: relative;
+    font-size: 16px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .card-suscripcion {
+    padding: 0.5em;
+    margin-top: 7em;
+    padding-top: 10em;
+  }
+
+  .precio-descuento {
+    font-size: 6rem;
+  }
+
+  .badge-descuento {
+    top: -5em;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+  }
+
+  .badge-descuento {
+    position: absolute;
+    top: -5em;
+    right: 0;
+    background: url(../img/oferta.png) center;
+    color: #670433;
+    font-weight: bold;
+    text-align: center;
+    height: 190px;
+    background-repeat: no-repeat;
+    transform: rotate(12deg);
+    font-size: 18px;
+    padding-top: 2em;
+  }
+}
+
+
+
+.bg-necesidades {
+  background-image: url(../img/bg-necesitas.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 5em;
+  width: 100%;
+  padding-bottom: 5em;
+}
+
+h1.necesitas {
+  font-family: argentcf-bold;
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: bold;
+  color: #E1DACB;
+}
+
+p.parrafo-necesita {
+  color: #E1DACB;
+  font-family: 'Poppins-Regular' !important;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+img.icon-wathsapp {
+  width: 20px;
+  vertical-align: sub;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .col-md-3 {
+    float: left;
+    width: 50%;
+  }
+
+}
+
+@media (min-width: 549px) and (max-width: 600px) {
+
+  .limitado {
+    background: #CC096F;
+    color: #E1DACB;
+    padding: 5px 0em 5px 0.5em;
+    clip-path: polygon(7% 10%, 100% 10%, 95% 100%, 0% 100%);
+    overflow: hidden;
+    position: relative;
+    font-size: 16px;
+    width: 77%;
+    margin: 0 auto;
+  }
+
+  .badge-descuento {
+    position: absolute;
+    top: 6em;
+    right: -8em;
+    background: url(../img/oferta.png);
+    color: #670433;
+    font-weight: bold;
+    padding: 30px 40px;
+    width: 190px;
+    height: 190px;
+    background-repeat: no-repeat;
+    transform: rotate(12deg);
+    background-size: 84%;
+    text-align: left;
+  }
+
+  .card-suscripcion {
+    background: #D7CCB8;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 77%;
+    padding: 2em;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  }
+}
+
+
+section.bg-formulario {
+  background: #6b0434 url(../img/fondo2.png);
+  background-position: center;
+  padding-top: 3em;
+  text-align: center;
+  /* Centra el texto dentro */
+  position: relative;
+  width: 100%;
+  padding-bottom: 20px;
+  font-family: 'Poppins-Regular';
+}
+
+p.texto-1 {
+  color: #CFBDB9;
+  font-family: 'Poppins-Regular';
+  font-size: 18px;
+}
+
+p.texto-2 {
+  color: #CFBDB9;
+  font-family: 'Poppins-Regular';
+  font-size: 18px;
+  margin-bottom: 2rem;
+}
+
+p.texto-1 {
+  margin-top: 1rem !important;
+  padding: 0;
+  margin: 0;
+}
+
+label.form-label.correoel {
+  color: #DED8CC;
+  font-size: 18px;
+  font-weight: 400 !important;
+  font-family: 'Poppins-Regular', sans-serif;
+}
+
+
+.seller-process-info.text-center.mt-5.p-4 {
+  margin-top: 3em;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  transform: translate(-21px, -px);
+  margin-top: 1px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga";
+}
+
+.btn-primary {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  width: 100%;
+  font-size: 18px;
+  color: #fff !important;
+}
+
+.form-group {
+  margin: 0 0 10px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 1em;
+  float: none !important;
+}
+
+label.form-label {
+  font-size: 18px;
+  font-family: 'Poppins-Regular';
+  color: #151515;
+}
+
+p.lead {
+  font-family: Poppins-Regular;
+  font-size: 18px;
+}
+
+.seller-validation-container {
+  padding: 2rem 0;
+  margin: 0 auto;
+  display: block;
+  width: 90%;
+}
+
+.seller-validation-container {
+  padding: 2rem 0;
+}
+
+.form-label {
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-primary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.process-step {
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+#wrapper {
+  padding-top: 0;
+  padding-bottom: 0;
+  min-height: 0;
+  clear: both;
+}
+
+/* =============================
+   Estilos para registro de CREADOR/VENDEDOR (nuevo formulario)
+   ============================= */
+
+h1.titulo-perfil {
+  font-size: 2.8rem;
+  color: #DED8CC;
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+
+.creator-register-container {
+  padding: 2rem 0;
+}
+
+.register-card {
+  background: #e0d8cb;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.register-card::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.register-stepper .step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.register-stepper .step-number {
+  background: #EBEBEB;
+  color: #A1A1A1;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Poppins-Regular', sans-serif;
+  margin-top: 10px;
+}
+
+.register-stepper .step.active .step-number {
+  background: #CC096F;
+  color: #FFFFFF;
+}
+
+.register-stepper .step-label {
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: 'Poppins-Regular', sans-serif;
+}
+
+.register-form-section {
+  margin-bottom: 3.8rem;
+}
+
+.section-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-family: 'Poppins-Regular', sans-serif;
+}
+
+.section-desc {
+  color: #151515;
+  font-size: 1rem;
+  margin-bottom: 2.4rem;
+  font-family: 'Poppins-Regular', sans-serif;
+}
+
+.custom-logo-upload {
+  position: relative;
+  height: 351px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #ccc;
+  border-radius: 12px;
+  background: #fff;
+  transition: border-color 0.2s;
+}
+
+.custom-logo-upload:hover {
+  border-color: #888;
+}
+
+.logo-file-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+.upload-logo-box {
+  border: 2px dashed #bfae9c;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  background: #fff;
+  width: 351px;
+  height: 351px;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-form-footer {
+  margin-top: 2rem;
+}
+
+.register-subtitle {
+  font-family: 'Poppins-Regular', sans-serif;
+  color: #DED8CC;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+
+@media (max-width: 991px) {
+  .register-card {
+    padding: 1rem;
+  }
+
+  .register-stepper {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 600px) {
+  .register-card {
+    max-width: 100%;
+  }
+}
+
+/* ====== Fin estilos registro CREADOR/VENDEDOR ====== */
+
+/* =============================
+   Fix grid Bootstrap float para registro CREADOR/VENDEDOR
+   ============================= */
+.register-card .row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.register-card [class^="col-md-"],
+.register-card [class*=" col-md-"] {
+  float: none !important;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .register-card .col-md-6 {
+    width: 50% !important;
+  }
+
+  .register-card .col-md-4 {
+    width: 33.33333% !important;
+  }
+
+  .register-card .col-md-12 {
+    width: 100% !important;
+  }
+}
+
+/* ====== Fin fix grid float registro CREADOR/VENDEDOR ====== */
+
+.register-stepper .step-label {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.creator-register-container .register-stepper .step-label {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.creator-register-container .register-stepper .step-label {
+  width: 100%;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.creator-register-container .section-title,
+.creator-register-container .section-desc {
+  text-align: left !important;
+}
+
+/* =============================
+   Stepper: fondo diferente y separador SOLO en registro de creador
+   ============================= */
+.register-stepper-wrapper {
+  background: #D7CCB8;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  padding: 2.5rem 2rem 1.5rem 2rem;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.register-stepper {
+  background: transparent;
+  position: relative;
+  z-index: 2;
+}
+
+.register-stepper-separator {
+  width: 100%;
+  height: 6px;
+  background: #fff;
+  border-radius: 3px;
+  margin: 1.5rem 0 0 0;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 1;
+}
+
+.register-stepper-labels {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #680434;
+  font-weight: 600;
+}
+
+/* ====== Fin fondo/separador stepper registro de creador ====== */
+
+/* =============================
+   Stepper: línea blanca alineada al centro del número
+   ============================= */
+.register-stepper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  padding: 0 2.5rem;
+}
+
+/* Barras de progreso individuales entre los steps */
+.register-stepper-track {
+  position: relative;
+  height: 13px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 1;
+  margin: 0 10px;
+  align-self: center;
+}
+
+/* Barra de progreso activa que se rellena gradualmente */
+.register-stepper-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #CC096F 0%, #A8094C 100%);
+  border-radius: 6px;
+  z-index: 1;
+  box-shadow: 0 2px 8px rgba(204, 9, 111, 0.3);
+  width: 0%;
+  will-change: width;
+  /* Transición removida para evitar animaciones extrañas en responsive */
+}
+
+/* Efecto de brillo en la barra de progreso */
+.register-stepper-progress::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  animation: shine 2s infinite;
+  border-radius: 6px;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Mejorar rendimiento en navegadores que soportan motion-reduce */
+@media (prefers-reduced-motion: reduce) {
+  .register-stepper-progress {
+    transition: none;
+  }
+
+  .register-stepper-progress::after {
+    animation: none;
+  }
+}
+
+.register-stepper .step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  z-index: 1;
+}
+
+/* ====== Fin alineación línea blanca stepper ====== */
+
+/* =============================
+   Iconos de los steppers
+   ============================= */
+.register-stepper .step-icon {
+  margin: .8rem 0 .3rem 0;
+  display: block;
+  width: 12%;
+}
+
+/* ====== Fin iconos steppers ====== */
+
+/* =============================
+   Inputs del formulario de registro
+   ============================= */
+.creator-register-container .form-control {
+  height: 60px !important;
+  border-radius: 5px !important;
+  border: 1px solid #D1D1D1 !important;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #FFFFFF;
+  color: #151515;
+  font-family: 'Poppins-Regular', sans-serif;
+}
+
+.text-helper {
+  margin-bottom: 1.5em;
+}
+
+.creator-register-container .form-control:focus {
+  border-color: #11AF22 !important;
+  box-shadow: 0 0 0 0.2rem rgba(17, 175, 34, 0.15) !important;
+  outline: none;
+}
+
+.creator-register-container textarea.form-control {
+  min-height: 200px;
+  padding: 15px 20px;
+  resize: vertical;
+}
+
+.creator-register-container select.form-control {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 12px center;
+  background-repeat: no-repeat;
+  background-size: 16px 12px;
+  padding-right: 40px;
+}
+
+.creator-register-container input[type="file"].form-control {
+  height: auto !important;
+  padding: 15px 20px;
+  border: 2px dashed #D1D1D1 !important;
+  background: #FAFAFA;
+}
+
+.creator-register-container input[type="file"].form-control:focus {
+  border-color: #CC096F !important;
+  background: #FFFFFF;
+}
+
+.creator-register-container .form-control.is-valid,
+.creator-register-container .form-control.is-valid:focus {
+  border-color: #11AF22 !important;
+  box-shadow: 0 0 0 0.2rem rgba(17, 175, 34, 0.15) !important;
+  outline: none;
+}
+
+.register-card .form-group #shop_colonia,
+.register-card .form-group select[name="shop_colonia"] {
+  width: 100% !important;
+  min-width: 0;
+  max-width: 100%;
+  display: block;
+  margin: 0;
+  padding-left: 45px;
+}
+
+/* Ajuste: los .form-group de la columna de dirección ocupan 100% de ancho solo en el registro */
+.register-card .right-address-col .form-group {
+  width: 100% !important;
+  max-width: 100%;
+}
+
+/* Oculta el ícono nativo del select */
+.creator-register-container select.form-control,
+.creator-register-container select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding-right: 2.5em;
+  height: 60px;
+  font-size: 1.2em;
+}
+
+/* Elimina el ícono de IE/Edge */
+.creator-register-container select::-ms-expand {
+  display: none;
+}
+
+/* Contenedor para el select con ícono personalizado */
+.creator-register-container .select-wrapper {
+  position: relative;
+  display: block;
+}
+
+.creator-register-container .select-wrapper select {
+  width: 100%;
+}
+
+.creator-register-container .select-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 1.2em;
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+  background: url('data:image/svg+xml;utf8,<svg fill="%23333" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat center center;
+  transform: translateY(-50%);
+}
+
+.creator-register-container input.form-control,
+.creator-register-container textarea.form-control,
+.creator-register-container select.form-control {
+  margin-bottom: 20px;
+}
+
+/* --- Mejora para input con icono a la izquierda (Visa) --- */
+.input-icon-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon-left {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  height: 32px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.input-icon-wrapper .form-control:has(+ .input-icon-left),
+.input-icon-wrapper .form-control.with-icon-left {
+  padding-left: 56px !important;
+  /* 32px icon + 16px left + 8px espacio */
+}
+
+.input-icon-wrapper .form-control {
+  width: 100%;
+  flex: 1 1 auto;
+  padding-right: 2.5em;
+  box-sizing: border-box;
+}
+
+.input-icon-wrapper .valid-check {
+  position: absolute;
+  right: 15px;
+  transform: translateY(-80%);
+  color: #11AF22;
+  font-size: 1.5em;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.creator-register-container .form-group {
+  width: 100% !important;
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+  float: none !important;
+}
+
+/* Campos deshabilitados con validación */
+.creator-register-container .form-control:disabled {
+  cursor: not-allowed;
+}
+
+.creator-register-container .form-control:disabled.is-valid {
+  background-color: #f8f9fa;
+}
+
+.creator-register-container .input-icon-wrapper .form-control:disabled+.valid-check {
+  opacity: 1;
+  display: inline !important;
+}
+
+/* --- Botones de registro (footer) --- */
+.register-form-footer {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.register-form-footer .btn {
+  font-family: 'Poppins-Regular', sans-serif;
+  width: 315px;
+  height: 60px;
+  font-size: 18px;
+  border-radius: 100px;
+  border: none;
+  box-shadow: none;
+  transition: background 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-form-footer .btn-secondary {
+  background: #4F032A;
+  color: #fff;
+}
+
+.register-form-footer .btn-secondary:hover,
+.register-form-footer .btn-secondary:focus {
+  background: #2d0c1e;
+  color: #fff;
+}
+
+.register-form-footer .btn-primary {
+  background: #C50A59;
+  color: #fff;
+}
+
+.register-form-footer .btn-primary:hover,
+.register-form-footer .btn-primary:focus {
+  background: #a81e4f;
+  color: #fff;
+}
+
+/* --- Estilos para navegación entre steps --- */
+.step-content {
+  display: none;
+}
+
+.step-content.active {
+  display: block;
+}
+
+/* Estilos para el step 2 - Datos bancarios */
+.input-icon-wrapper .form-control {
+  padding-left: 1em;
+}
+
+.input-icon-wrapper .form-control:has(+ .input-icon-left),
+.input-icon-wrapper .form-control.with-icon-left {
+  padding-left: 4.2em !important;
+}
+
+.input-icon-left svg {
+  display: block;
+  transform: translateY(-25%);
+}
+
+.input-icon-link{
+  position: absolute;
+  transform: translateY(-25%);
+  padding-left: 5px;
+  margin-top: 5px;
+}
+
+/* Estilos para el stepper completado */
+.register-stepper .step.completed .step-number {
+  background: #CC096F;
+  color: white;
+}
+
+.register-stepper .step.completed .step-label {
+  color: #333333;
+  font-weight: 600;
+}
+
+/* Animación de transición entre steps */
+.step-content {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.step-content:not(.active) {
+  opacity: 0;
+}
+
+.step-content.active {
+  opacity: 1;
+}
+
+.ets_mp_content_left * {
+  outline: none !important;
+}
+.ets_mp_content_left .ets_mp-table-data .table tr{
+background: #E0D8CB !important;
+
+}
+div#content-wrapper {
+  background: #6b0434 url(../img/fondo2.png);
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+p.register-subtitle.mb-4 {
+  text-align: center;
+}
+
+.creator-register-container .register-stepper .step-label {
+  width: 100%;
+  margin-top: 0.5rem;
+  display: block;
+  text-align: center;
+}
+
+label.form-label {
+  margin-top: 15px;
+}
+
+footer.page-footer {
+  display: none !important;
+}
+
+
+.col-md-6.left-info-col.c1 {
+  border-right: 1px solid #898989;
+}
+
+
+p.form-text.text-lft {
+  text-align: left !important;
+  font-family: 'Poppins-Regular' !important;
+}
+.custom-radio input[type="radio"]:checked+span {
+    display: block;
+    background-color: #ffffff;
+    width: 13.66px;
+    height: 13.66px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    -moz-border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+div#payment-option-stripe-container {
+  text-align: left;
+}
+
+span.leccion {
+  font-size: 18px;
+  margin-left: -12px;
+}
+
+.select-wrapper {
+  width: 100% !important;
+}
+
+.select-wrapper select {
+  width: 100% !important;
+  min-width: 100% !important;
+}
+
+/* Asegurar que todos los selects tengan el mismo ancho que los inputs */
+.form-control {
+  width: 100% !important;
+}
+
+#shop_estado {
+  width: 100% !important;
+  min-width: 100% !important;
+}
+
+/* Asegurar que el contenedor del select tenga el ancho completo */
+.input-icon-wrapper .select-wrapper {
+  width: 100% !important;
+  display: block !important;
+}
+
+/* Estilos para mensajes de validación */
+.validation-message {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.3s ease-out;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.validation-message.alert-danger {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+  color: white;
+}
+
+.validation-message.alert-success {
+  background: linear-gradient(135deg, #51cf66, #40c057);
+  color: white;
+}
+
+.validation-message svg {
+  flex-shrink: 0;
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Resaltar campos con error */
+.field-error {
+  border-color: #CC096F !important;
+  box-shadow: 0 0 0 0.2rem rgba(204, 9, 111, 0.25) !important;
+}
+
+/* Animación para campos válidos */
+.field-success {
+  border-color: #28a745 !important;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25) !important;
+}
+
+/* Mejorar la experiencia visual de los campos */
+.form-control:focus {
+  border-color: #CC096F;
+  box-shadow: 0 0 0 0.2rem rgba(204, 9, 111, 0.25);
+}
+
+.form-control.is-valid {
+  border-color: #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.form-control.is-invalid {
+  border-color: #CC096F;
+  box-shadow: 0 0 0 0.2rem rgba(204, 9, 111, 0.25);
+}
+
+/* Estilos para SweetAlert2 personalizados según Figma */
+.swal2-popup, .poppins-swal-popup {
+  font-family: 'Poppins', sans-serif;
+  background-color: #E0D8CB;
+  border-radius: 30px;
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.20);
+  padding: 30px;
+  max-width: 978px;
+  min-width: 400px;
+  width: auto;
+  height: auto;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.swal2-title, .poppins-swal-title {
+  font-weight: 400;
+  color: #680434;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.swal2-html-container, .poppins-swal-text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #680434;
+  background-color: #E0D8CB !important;
+  font-family: 'Poppins', sans-serif;
+  max-height: none;
+  overflow-y: visible;
+  padding: 20px 170px;
+  border-radius: 15px;
+  flex-grow: 0;
+  min-height: auto;
+}
+
+.swal2-icon.swal2-warning {
+  border: none !important;
+  background-image: url('/themes/PRSADD279_02/assets/img/error-input.svg') !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: 60px !important;
+  height: 60px !important;
+}
+
+.swal2-icon.swal2-warning .swal2-icon-content {
+  display: none !important;
+}
+
+.swal2-icon.swal2-warning::before,
+.swal2-icon.swal2-warning::after {
+  display: none !important;
+}
+
+.swal2-confirm {
+  background-color: #CC096F !important;
+  border: none !important;
+  border-radius: 100px !important;
+  width: 344px !important;
+  height: 60px !important;
+  font-family: 'Poppins-Light';
+  font-size: 18px !important;
+  color: white !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 15px rgba(204, 9, 111, 0.3) !important;
+  margin: 20px auto 0 auto !important;
+  flex-shrink: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.swal2-actions {
+  margin-top: 1rem !important;
+  padding: 0 !important;
+  flex-shrink: 0 !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.swal2-confirm:hover {
+  background-color: #A5094C !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(204, 9, 111, 0.4) !important;
+}
+
+.swal2-confirm:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(204, 9, 111, 0.25) !important;
+}
+
+/* Icono de advertencia personalizado */
+.swal2-icon.swal2-warning {
+  border-color: #CC096F !important;
+  color: #CC096F !important;
+}
+
+.swal2-icon.swal2-warning .swal2-icon-content {
+  color: #CC096F !important;
+  font-weight: bold !important;
+}
+
+/* Icono de éxito personalizado */
+.swal2-icon.swal2-success {
+  border-color: #28a745 !important;
+  color: #28a745 !important;
+}
+
+/* Backdrop personalizado */
+.swal2-backdrop-show {
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Animaciones suaves */
+.swal2-show {
+  animation: swal2-show 0.3s ease-out !important;
+}
+.swal2-hide {
+  animation: swal2-hide 0.3s ease-in !important;
+}
+@keyframes swal2-show {
+  0% {
+    transform: scale(0.7) translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes swal2-hide {
+  0% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.7) translateY(-30px);
+    opacity: 0;
+  }
+}
