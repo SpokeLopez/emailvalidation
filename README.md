@@ -193,21 +193,6 @@ El módulo incluye un panel de configuración en el Back Office:
 - ✅ Email nuevo, registro normal
 - ✅ Email nuevo, registro vendedor
 
-## 🚀 Roadmap
-
-### Funcionalidades Planeadas
-- [ ] Integración con APIs de validación de email
-- [ ] Estadísticas de conversión
-- [ ] A/B Testing para landing pages
-- [ ] Notificaciones automáticas
-- [ ] Panel de analytics
-
-### Mejoras Técnicas
-- [ ] Optimización de consultas SQL
-- [ ] Cache para verificaciones frecuentes
-- [ ] Logs detallados de actividad
-- [ ] API REST para integraciones
-
 ## 👥 Contribuir
 
 ### Proceso de Contribución
